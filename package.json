@@ -1,0 +1,35 @@
+{
+  "name": "mobify",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.9",
+    "@headlessui/react": "^1.7.17",
+    "@sanity/client": "^6.1.7",
+    "@sanity/image-url": "^1.0.2",
+    "@stripe/stripe-js": "^2.1.6",
+    "canvas-confetti": "^1.7.0",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "next-sanity": "^5.1.2",
+    "next-sanity-image": "^6.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "remixicon": "^3.5.0",
+    "stripe": "^12.14.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3"
+  }
+}
