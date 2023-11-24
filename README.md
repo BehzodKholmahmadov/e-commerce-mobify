@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project  with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and Tailwind Css
+.
 
 ## Getting Started
 
@@ -11,6 +12,7 @@ yarn dev
 # or
 pnpm dev
 ```
+and then open sanity-project folder and run same code above.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
