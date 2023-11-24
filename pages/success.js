@@ -13,7 +13,7 @@ const Success = () => {
     setTotalPrice(0);
     setTotalQuantities(0);
     runFireworks();
-   }, []);
+   }, [setCartItems,setTotalPrice,setTotalQuantities]);
   return (
     <div className='bg-white min-h-[60vh]'>
         <div className='w-[1000px] m-auto mt-[160px] bg-[#dcdcdc] p-14 leading-4 flex justify-center items-center flex-col'>

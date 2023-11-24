@@ -20,11 +20,12 @@ const ProductDetails = ({product,products}) => {
         <div className='flex gap-10 m-10 mt-[60px] text-[#324d67] md:flex-wrap'>
             <div>
                 <div className=''>
-                    <img src={urlFor(image && image[index])} className='rounded-2xl bg-[#ebebeb] w-[400px] h-[400px] cursor-pointer transition-transform duration-300 ease-in-out hover:bg-[#f02d34] md:w-[350px] md:h-[350px] sm:w-[250px] sm:h-[250px]'  />
+                    <img src={urlFor(image && image[index])} alt='main-image' className='rounded-2xl bg-[#ebebeb] w-[400px] h-[400px] cursor-pointer transition-transform duration-300 ease-in-out hover:bg-[#f02d34] md:w-[350px] md:h-[350px] sm:w-[250px] sm:h-[250px]' />
                 </div>
                 <div className='flex gap-3 mt-5'>
                     {image?.map((item,i)=>(
                         <img
+                        alt='under-main'
                         key={i}
                         src={urlFor(item)}
                         className={i=== index ? 'rounded-lg bg-[#ebebeb] w-[70px] h-[70px] cursor-pointer hover:bg-[red]':'rounded-lg bg-[#ebebeb] w-[70px] h-[70px] cursor-pointer'}

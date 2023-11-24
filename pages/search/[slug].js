@@ -8,8 +8,10 @@ import { client } from '../../lib/client';
 const Busca = ({products, slug}) => {
     const {setSearchTerm} = useStateContext()
     useEffect(() => {
-        setSearchTerm('');
-    }, [products])
+        if (products.length > 0) {
+          setSearchTerm('');
+        }
+      },[products,setSearchTerm]);
 
     return (
         <div>

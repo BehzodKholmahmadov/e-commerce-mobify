@@ -39,7 +39,7 @@ const Cart2=()=> {
 
   return (
     <Transition show={true} as={Fragment} ref={cartRef} >
-      <Dialog as="div" className="fixed  " onClose={(e)=>e.preventDefault()}>
+      <Dialog as="div" className="fixed" onClose={()=>preventDefault}>
         <Transition.Child
           as={Fragment}
           enter='transition-opacity ease-linear duration-1000'
@@ -101,6 +101,7 @@ const Cart2=()=> {
                               <li key={item._id} className="flex py-6">
                                 <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 md:m-[25%] md:h-[25%]">
                                   <img
+                                    alt='selled-image'
                                     src={urlFor(item?.image[0] )}
                                     className="h-full w-full object-cover object-center cursor-pointer  hover:bg-[red] "
                                   />

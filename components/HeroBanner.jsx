@@ -15,9 +15,9 @@ const HeroBanner = ({heroBanner}) => {
       <Link href={`/product/${heroBanner.product}`}>
           <button className='rounded-2xl py-3 px-4 bg-[#f02d34] text-white border-none mt-10 text-xl font-medium cursor-pointer z-[10000] hover:scale-110 md:mt-[91px] md:z-[10000] sm:mt-[140px] sm:mr-7' type='button'>{heroBanner.buttonText}</button>
         </Link>
-        <div className='absolute right-[10%] bottom-[5%] w-80 leading-[1.3] flex flex-col text-[#324d67] md:bottom-16 sm:items-center sm:self-center sm:mb-12'>
-          <h5 className='mb-3 font-bold text-base text-end '>Description</h5>
-          <p className='text-[#5f5f5f] font-thin text-end sm:text-center '>{heroBanner.desc}</p>
+        <div className='absolute right-[10%] bottom-[5%] w-80 leading-[1.3] flex flex-col text-[#324d67] md:bottom-16 sm:place sm:mb-12'>
+          <h5 className='mb-3 font-bold text-base text-center sm:mt-5'>Description</h5>
+          <p className='text-[#5f5f5f] font-thin text-end sm:text-center sm:flex '>{heroBanner.desc}</p>
         </div>
       </div>
     </div>

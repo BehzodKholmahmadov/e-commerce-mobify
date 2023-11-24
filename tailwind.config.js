@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       boxShadow:{
-        'mine':'0 0 4pxrgba(0, 0, 0, 0.25); '
+        'mine':'0 0 4pxrgba(0, 0, 0, 0.25)'
       },
       keyframes:{
         pause:{
@@ -30,12 +30,7 @@ module.exports = {
         marquee:'marquee 10s linear infinite',
         marquees:'marquee 15s linear infinete',
         pause:'pause 100s linear infinite'
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      }
     },
   },
   plugins: [],

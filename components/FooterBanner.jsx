@@ -13,7 +13,7 @@ const FooterBanner = () => {
         <div>
           <h3 className="text-2xl font-bold text-gray-800 sm:text-lg">Great sales</h3>
           <div className=''>
-          <span className="text-white sm:text-xs">We offer more discounts everyday so don't miss your chance!</span></div>
+          <span className="text-white sm:text-xs">We offer more discounts everyday so dont miss your chance!</span></div>
         </div>
       </div>
     </div>
