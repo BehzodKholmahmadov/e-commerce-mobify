@@ -15,9 +15,7 @@ export  const StateContext=({ children })=>{
     const [input,setInput]=useState('');
     const [results,setResults]=useState([])
     const [searchTerm, setSearchTerm] = useState('');
-    const [loading,setLoading] = useState(true);
     
-    // This code below check if we have any product in our basket if yes then add one more to its quantity if not then add the product to the basket
     const onAdd=async(product,quantity)=>{
         const checkProduct=cartItems.find((item)=>item._id===product._id);
         setTotalPrice((prevTotalPrice)=>prevTotalPrice+product.price*quantity);
@@ -117,25 +115,3 @@ export  const StateContext=({ children })=>{
 export const useStateContext=() => useContext(Context);
 
 
-
-
-    // the code below will check if the product quantity has been changed and then update the cart items quantity with total price 
-    // const toggleCartItemQuantity = (id, value) => {
-    //     const index = cartItems.findIndex((product) => product._id === id);
-    //     const foundProduct = cartItems[index];
-      
-    //     const newCartItems = [...cartItems];
-    //     newCartItems.splice(index, 1, { ...foundProduct, quantity: value === 'increment' ? foundProduct.quantity + 1 : foundProduct.quantity - 1 });
-      
-    //     setCartItems(newCartItems);
-      
-    //     if (value === 'increment') {
-    //       setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price);
-    //       setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
-    //     } else if (value === 'decrement') {
-    //       if (foundProduct.quantity > 1) {
-    //         setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price);
-    //         setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
-    //       }
-    //     }
-    //   };

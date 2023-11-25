@@ -95,35 +95,3 @@ export default Search;
 
 
 
-
-// const SearchTerm=(value)=>{
-//   if(cartItems && cartItems.length>0){  
-//     const result=cartItems.filter((cartItems)=>{
-//       return (
-//         value
-//          && cartItems.name 
-//          && cartItems.name.toLowerCase().includes(value)
-//       )
-//     })
-//     setResults(result);
-//   } else{
-//     setResults([]);
-//   }
-//   }
-//   const handleSearch = (value) => {
-//     setInput(value);
-//     SearchTerm(value);
-//   }
-
-
-
-    {/* <div className=' absolute w-full bg-white flex justify-center flex-wrap rounded-xl mt-2 max-h-[300px] overflow-y-scroll  top-full left-0 right-0 z-50  shadow-mine transition-all duration-200 ease-in-out  '>
-      
-      <ul className='flex flex-col w-full'>
-      
-      {results.map((result, i) =>{
-       return <div key={i} className='font-medium leading-5 p-4 cursor-pointer hover:bg-[#efefef] ' > <Link href={`/product/${result.slug.current}`}>{result.name}</Link></div>
-     })} 
-     </ul> 
- 
-   </div>  */}
